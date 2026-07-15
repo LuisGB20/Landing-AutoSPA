@@ -1,0 +1,174 @@
+<section class="testimonials" id="testimonios">
+	<div class="container">
+		<h2 class="section-title fade-in">
+			Lo que dicen <span>nuestros clientes</span>
+		</h2>
+
+		<div class="testimonials-grid fade-in">
+			<div class="testimonial-card">
+				<div class="testimonial-text">
+					"He llevado mi auto a muchos lavados, pero este es otro
+					nivel. El cuidado en los detalles es brutal."
+				</div>
+				<div class="testimonial-author">
+					<div class="author-avatar">MC</div>
+					<div class="author-info">
+						<h5>Martín Cortés</h5>
+						<p>BMW Serie 3</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="testimonial-card">
+				<div class="testimonial-text">
+					"Llegué sin expectativas y salí impresionado. El interior
+					quedó como nuevo."
+				</div>
+				<div class="testimonial-author">
+					<div class="author-avatar">JP</div>
+					<div class="author-info">
+						<h5>Juan Pérez</h5>
+						<p>Mercedes Benz</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="testimonial-card">
+				<div class="testimonial-text">
+					"Rápidos, profesionales y con buena vibra. Se nota cuando
+					alguien ama lo que hace."
+				</div>
+				<div class="testimonial-author">
+					<div class="author-avatar">CR</div>
+					<div class="author-info">
+						<h5>Carlos Ríos</h5>
+						<p>Audi A4</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="testimonial-card">
+				<div class="testimonial-text">
+					"El mejor lavado de la zona, sin duda. Vale cada peso."
+				</div>
+				<div class="testimonial-author">
+					<div class="author-avatar">FS</div>
+					<div class="author-info">
+						<h5>Fernando Soto</h5>
+						<p>Toyota Hilux</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="testimonial-card">
+				<div class="testimonial-text">
+					"Mi camioneta salió brillando como agencia. Volveré seguro."
+				</div>
+				<div class="testimonial-author">
+					<div class="author-avatar">LR</div>
+					<div class="author-info">
+						<h5>Luis Ramírez</h5>
+						<p>Ford Ranger</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="testimonial-card">
+				<div class="testimonial-text">
+					"Atención top y resultados premium. Se ganaron un cliente
+					fijo."
+				</div>
+				<div class="testimonial-author">
+					<div class="author-avatar">AG</div>
+					<div class="author-info">
+						<h5>Andrés Gómez</h5>
+						<p>Chevrolet Camaro</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.testimonials {
+		background: var(--black);
+	}
+
+	.testimonials-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.testimonial-card {
+		background: rgba(255, 255, 255, 0.03);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		border-radius: 15px;
+		padding: 2.5rem;
+		text-align: center;
+		transition: var(--transition);
+	}
+
+	.testimonial-card:hover {
+		transform: translateY(-8px);
+		border-color: var(--orange);
+		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+	}
+
+	.testimonial-text {
+		font-size: 1.15rem;
+		font-style: italic;
+		margin-bottom: 2rem;
+		color: var(--gray);
+	}
+
+	.testimonial-author {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+	}
+
+	.author-avatar {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		background: var(--orange);
+		color: var(--black);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 800;
+		font-size: 1.1rem;
+	}
+
+	.author-info h5 {
+		font-size: 1.1rem;
+		margin-bottom: 0.2rem;
+	}
+
+	.author-info p {
+		font-size: 0.9rem;
+		color: var(--gray);
+	}
+
+	
+@media (max-width: 1024px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    padding: 2rem;
+  }
+}
+</style>

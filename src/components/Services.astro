@@ -1,0 +1,131 @@
+<section class="services" id="servicios">
+	<div class="container">
+		<h2 class="section-title fade-in">
+			Servicios <span>Premium</span>
+		</h2>
+
+		<div class="services-grid">
+			<div class="service-card fade-in">
+				<div class="service-icon">
+					<i class="fas fa-bolt"></i>
+				</div>
+				<h3>Rápido</h3>
+				<h4>Desde:</h4>
+				<div class="service-price">$150.00</div>
+				<ul class="service-features">
+					<li>Lavado exterior express</li>
+					<li>Aspirado rápido interior</li>
+					<li>Limpieza de vidrios</li>
+					<li>Secado profesional</li>
+					<li>15 minutos promedio</li>
+				</ul>
+				<a href="#" class="btn btn-primary">Reservar Ahora</a>
+			</div>
+
+			<div class="service-card fade-in">
+				<div class="service-icon">
+					<i class="fas fa-crown"></i>
+				</div>
+				<h3>Completo</h3>
+				<h4>Desde:</h4>
+				<div class="service-price">$500.00</div>
+				<ul class="service-features">
+					<li>Lavado exterior premium</li>
+					<li>Aspirado profundo completo</li>
+					<li>Limpieza de llantas y rines</li>
+					<li>Tratamiento de plásticos</li>
+					<li>Productos especializados</li>
+					<li>45 minutos promedio</li>
+				</ul>
+				<a href="#" class="btn btn-primary">Reservar Ahora</a>
+			</div>
+
+			<div class="service-card fade-in">
+				<div class="service-icon">
+					<i class="fas fa-gem"></i>
+				</div>
+				<h3>Detail</h3>
+				<h4>Desde:</h4>
+				<div class="service-price">$1000.00</div>
+				<ul class="service-features">
+					<li>Lavado de motor incluido</li>
+					<li>Pulido y encerado profesional</li>
+					<li>Limpieza de tapicería a vapor</li>
+					<li>Tratamiento de cuero</li>
+					<li>Protección UV completa</li>
+					<li>2-3 horas de trabajo</li>
+				</ul>
+				<a href="#" class="btn btn-primary">Reservar Ahora</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.services {
+		background: var(--dark);
+		position: relative;
+	}
+
+	.services-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.service-card {
+		background: rgba(255, 255, 255, 0.03);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		border-radius: 15px;
+		padding: 2.5rem;
+		transition: var(--transition);
+		text-align: center;
+	}
+
+	.service-card:hover {
+		transform: translateY(-10px);
+		border-color: var(--orange);
+		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+	}
+
+	.service-icon {
+		font-size: 3rem;
+		color: var(--orange);
+		margin-bottom: 1.5rem;
+	}
+
+	.service-card h3 {
+		font-size: 1.8rem;
+		margin-bottom: 1rem;
+	}
+
+	.service-price {
+		font-size: 2.5rem;
+		font-weight: 800;
+		color: var(--orange);
+		margin-bottom: 1.5rem;
+	}
+
+	.service-features {
+		list-style: none;
+		margin-bottom: 2rem;
+		min-height: 230px;
+	}
+
+	.service-features li {
+		color: var(--gray);
+		margin-bottom: 0.8rem;
+		padding-left: 1.5rem;
+		position: relative;
+		text-align: left;
+	}
+
+	.service-features li::before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: var(--orange);
+		font-size: 1.5rem;
+		top: -6px;
+	}
+</style>

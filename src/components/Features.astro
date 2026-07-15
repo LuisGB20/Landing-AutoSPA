@@ -1,0 +1,92 @@
+<section id="por-que-elegirnos" class="features">
+	<div class="container">
+		<h2 class="section-title fade-in">
+			Por qué <span>Elegirnos</span>
+		</h2>
+
+		<div class="features-grid">
+			<div class="feature-card fade-in">
+				<div class="feature-icon">
+					<i class="fas fa-clock"></i>
+				</div>
+				<h4>Rápido y sin vueltas</h4>
+				<p>
+					Llegas, te atendemos y te vas con tu nave impecable. Sin
+					filas eternas ni citas innecesarias.
+				</p>
+			</div>
+
+			<div class="feature-card fade-in">
+				<div class="feature-icon">
+					<i class="fas fa-shield-alt"></i>
+				</div>
+				<h4>Garantía sin excusas</h4>
+				<p>
+					Si algo no te convence, lo repetimos. Así de simple. Aquí
+					respondemos por nuestro trabajo.
+				</p>
+			</div>
+
+			<div class="feature-card fade-in">
+				<div class="feature-icon">
+					<i class="fas fa-leaf"></i>
+				</div>
+				<h4>Alto cuidado</h4>
+				<p>
+					Productos biodegradables y uso responsable del agua. Limpio
+					por fuera, correcto por dentro.
+				</p>
+			</div>
+
+			<div class="feature-card fade-in">
+				<div class="feature-icon">
+					<i class="fas fa-award"></i>
+				</div>
+				<h4>Manos expertas</h4>
+				<p>
+					No improvisamos. Nuestro equipo está capacitado en detailing
+					y cuidado profesional del vehículo.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.features-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+	}
+
+	.feature-card {
+		text-align: center;
+		padding: 2rem;
+		background: rgba(255, 255, 255, 0.02);
+		border-radius: 15px;
+		transition: var(--transition);
+	}
+
+	.feature-card:hover {
+		background: rgba(255, 122, 0, 0.05);
+		transform: translateY(-5px);
+	}
+
+	.feature-icon {
+		width: 80px;
+		height: 80px;
+		background: rgba(255, 122, 0, 0.1);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto 1.5rem;
+		font-size: 2rem;
+		color: var(--orange);
+	}
+
+	.feature-card h4 {
+		font-size: 1.3rem;
+		margin-bottom: 1rem;
+	}
+</style>
